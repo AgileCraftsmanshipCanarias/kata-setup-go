@@ -1,5 +1,6 @@
 package kata
 
+//go:generate mockgen -destination=mocks/mock_dependency.go -package=mocks . Dependency
 type Dependency interface {
 	Value() int
 }
